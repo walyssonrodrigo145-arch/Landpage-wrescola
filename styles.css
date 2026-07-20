@@ -418,3 +418,86 @@ body {
         font-size: 0.75rem;
     }
 }
+
+/* Prova Social Stats */
+.profile-stats {
+    font-size: 0.8rem;
+    color: #a78bfa;
+    background: rgba(167, 139, 250, 0.08);
+    border: 1px solid rgba(167, 139, 250, 0.15);
+    padding: 6px 16px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.2);
+}
+
+/* Destaque para o CTA Principal do WhatsApp */
+.bio-btn.highlight-btn {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(124, 58, 237, 0.08) 100%);
+    border: 1px solid rgba(124, 58, 237, 0.25);
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.1);
+}
+
+.bio-btn.highlight-btn:hover {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.18) 0%, rgba(124, 58, 237, 0.15) 100%);
+    border-color: rgba(124, 58, 237, 0.45);
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
+}
+
+/* Indicador de Modal (+) Rotação no Hover */
+.bio-btn:hover .btn-modal-indicator svg {
+    transform: rotate(90deg) scale(1.1);
+}
+
+.bio-btn .btn-modal-indicator svg {
+    color: var(--text-muted);
+}
+
+.bio-btn:hover .btn-modal-indicator svg {
+    color: #a78bfa;
+}
+
+/* Footer & Botão de Conversão dentro do Modal */
+.modal-footer {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+}
+
+.modal-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #3b82f6 0%, #7c3aed 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 20px -5px rgba(124, 58, 237, 0.4);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px -5px rgba(124, 58, 237, 0.6);
+    background: linear-gradient(135deg, #4f8ff7 0%, #8b4ffc 100%);
+}
+
+.modal-cta-btn svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.modal-cta-btn:hover svg {
+    transform: translateX(4px);
+}

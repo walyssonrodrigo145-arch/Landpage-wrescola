@@ -12,6 +12,7 @@ try:
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     ssh.connect('76.13.228.159', username='root', password='Walysson2003@', timeout=10)
     
+    ssh.exec_command("mkdir -p /root/wr-music-app/landpage")
     sftp = ssh.open_sftp()
     
     for f in files_to_upload:
